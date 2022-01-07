@@ -31,3 +31,6 @@ inside index.js file--> import 'bootstrap/dist/css/bootstrap.min.css';
 ```
 ### 5. manage folders: (setup foders for a clean and fresh )
 <img src="picS/components tree.JPG" alt="alt" width="60%">
+
+### 6. setup navigation bar. at header --> create a component 'Navigation.js' --> design using reactstrap: https://reactstrap.github.io
+<img src="picS/NAvigation bar.JPG" alt="alt" width="70%">

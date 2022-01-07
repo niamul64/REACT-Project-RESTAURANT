@@ -26,5 +26,8 @@ inside index.js file--> import 'bootstrap/dist/css/bootstrap.min.css';
 ```
 ### 4. setting up files:
 ```
-1. Delete all unnecessary code from app.js and index.js file
+1. Delete all unnecessary code from app.js, index.js and app.css file
+2. delete ./logo.svg and related imports and code of this.
 ```
+### 5. manage folders: (setup foders for a clean and fresh )
+<img src="picS/components tree.JPG" alt="alt" width="60%">

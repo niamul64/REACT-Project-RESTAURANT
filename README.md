@@ -2,9 +2,9 @@
 ### 1. creating app
 ```
 $ cd resturent project file
-// react app name 'restaurant'
-$ create-react-app RESTAURANT-APP
-$ cd restaurant
+// react app name 'restaurant-app'
+$ create-react-app restaurant-app
+$ cd restaurant-app
 $ npm start
 //
 ```
@@ -20,5 +20,11 @@ $ npm install dateformat --save
 ### 3. add bootstrap to project:
 ```
 // go to index.js and add bootstrap path:
+//path: node_modules\bootstrap\dist\css\bootstrap.min.css
 
+inside index.js file--> import 'bootstrap/dist/css/bootstrap.min.css';
+```
+### 4. setting up files:
+```
+1. Delete all unnecessary code from app.js and index.js file
 ```

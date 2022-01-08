@@ -4,7 +4,7 @@ import Menu from './Menu';
 
 const Body = () => {
       return (
-            <div>
+            <div style={{ marginTop: "70px" }}>
                   <Menu />
 
             </div>

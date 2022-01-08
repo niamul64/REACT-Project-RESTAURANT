@@ -45,15 +45,28 @@ inside index.js file--> import 'bootstrap/dist/css/bootstrap.min.css';
 
 #### design into ManuItem.js :-> inside 'return':
 ```
-          <div>
-                  <Card>
+            return (
+            <div>
+                  <Card style={{ margin: "10px", padding: "2px" }}>
                         <CardBody  >
-                              <CardImg width="100%" alt={props.dish.name} src={props.dish.image}></CardImg>
+                              <CardImg width="100%" alt={props.dish.name} src={props.dish.image} style={{ opacity: "0.6" }} >
+
+                              </CardImg>
                               <CardImgOverlay>
-                                    <CardTitle>{props.dish.name}</CardTitle>
+                                    <CardTitle style={{ cursor: "pointer" }}>{props.dish.name}</CardTitle>
                               </CardImgOverlay>
 
                         </CardBody>
                   </Card>
-            </div>
+            </div >
+      );
 ```
+### 10. Now, if any one clicks on the dish then we will show the details of the particular dish which clicked.
+#### to do that we need  to edit on menu.js, and create another componet 'DishDetails.js'.
+#### here 2 approch: 
+#### 1st approch: passing from the designed jSX code->
+<img src="picS/send from showing page.JPG"  width="100%">
+
+#### 2nd approch: grabing from, sending function reference
+
+<img src="picS/grab from main manu.JPG"  width="100%">

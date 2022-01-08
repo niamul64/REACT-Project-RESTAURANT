@@ -1,7 +1,8 @@
 import React from 'react';
 import { Card, CardImg, CardImgOverlay, CardBody, CardTitle } from 'reactstrap';
 
-const MenuItem = (props) => {
+const DishDetails = (props) => {
+      console.log(props);
 
       return (
             <div>
@@ -26,4 +27,4 @@ const MenuItem = (props) => {
             </div >
       );
 }
-export default MenuItem;
+export default DishDetails;

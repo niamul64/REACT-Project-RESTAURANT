@@ -1,14 +1,14 @@
 import React from 'react';
 import { Card, CardImg, CardImgOverlay, CardBody, CardTitle } from 'reactstrap';
+import LoadComments from './LoadComments';
 
 const DishDetails = (props) => {
-      console.log(props);
-
       return (
             <div>
                   <Card style={{ margin: "10px", padding: "2px" }}>
-                        <CardBody  >
-                              <CardImg width="100%" alt={props.dish.name} src={props.dish.image} style={{ opacity: "0.6" }} >
+                        <CardBody >
+                              <p>{props.dish.name} </p>
+                              <CardImg width="100%" alt={props.dish.name} src={props.dish.image}  >
 
                               </CardImg>
                               <CardImgOverlay>
@@ -20,7 +20,16 @@ const DishDetails = (props) => {
                                           {props.dish.name}
                                     </CardTitle>
 
+
+
                               </CardImgOverlay>
+                              <div align="left">
+                                    <p>Description: {props.dish.description} </p>
+                                    <p >price: {props.dish.price} </p>
+
+                                    <hr />
+                                    <LoadComments comments={props.dish.comments} />
+                              </div>
 
                         </CardBody>
                   </Card>

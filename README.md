@@ -70,3 +70,75 @@ inside index.js file--> import 'bootstrap/dist/css/bootstrap.min.css';
 #### 2nd approch: grabing from, sending function reference
 
 <img src="picS/grab from main manu.JPG"  width="100%">
+
+### 11. Show comments or food review: make another componet inside Body directory, "loadComments.js". We need to send obj from 'DishDetails.js'-> loadComments.js.
+see the project: easy.
+code:
+```
+//DishDetails.js file:
+
+import React from 'react';
+import { Card, CardImg, CardImgOverlay, CardBody, CardTitle } from 'reactstrap';
+import LoadComments from './LoadComments';
+
+const DishDetails = (props) => {
+      return (
+            <div>
+                  <Card style={{ margin: "10px", padding: "2px" }}>
+                        <CardBody >
+                              <p>{props.dish.name} </p>
+                              <CardImg width="100%" alt={props.dish.name} src={props.dish.image}  >
+
+                              </CardImg>
+                              <CardImgOverlay>
+
+                                    <CardTitle onClick={() => props.function(props.dish)}
+
+                                          style={{ cursor: "pointer" }}>
+
+                                          {props.dish.name}
+                                    </CardTitle>
+
+
+
+                              </CardImgOverlay>
+                              <div align="left">
+                                    <p>Description: {props.dish.description} </p>
+                                    <p >price: {props.dish.price} </p>
+
+                                    <hr />
+                                    <LoadComments comments={props.dish.comments} />
+                              </div>
+
+                        </CardBody>
+                  </Card>
+            </div >
+      );
+}
+export default DishDetails;
+```
+```
+// load comments: loadComments.js file :
+import React from 'react';
+import dateFormat, { masks } from "dateformat";
+import { Card, CardImg, CardImgOverlay, CardBody, CardTitle } from 'reactstrap';
+
+const LoadComments = (props) => {
+      console.log(props);
+
+      return (
+            props.comments.map(comment => {
+                  return (
+                        <div key={comment.id}>
+                              <h5>{comment.author} : </h5>
+                              <p>{comment.comment}</p>
+                              <p>{dateFormat(comment.date, "dddd, mmmm dS, yyyy, h:MM:ss TT")}</p>
+
+                        </div>
+                  );
+            })
+      );
+}
+export default LoadComments;
+```
+

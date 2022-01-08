@@ -12,7 +12,7 @@ const MenuItem = (props) => {
                               </CardImg>
                               <CardImgOverlay>
 
-                                    <CardTitle onClick={() => props.function(props.dish)}
+                                    <CardTitle onClick={props.function}
 
                                           style={{ cursor: "pointer" }}>
 

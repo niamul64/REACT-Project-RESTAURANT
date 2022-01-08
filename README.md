@@ -42,3 +42,18 @@ inside index.js file--> import 'bootstrap/dist/css/bootstrap.min.css';
 ### 9. Now, inside the body component we can make the item list view. So, inside body componet folder, create 'Manu.js'(it will ba a class based component) and 'MenuItem.js'--> . because it will have state for data. 
 
 <img src="picS/dishes print on console.JPG"  width="70%">
+
+#### design into ManuItem.js :-> inside 'return':
+```
+          <div>
+                  <Card>
+                        <CardBody  >
+                              <CardImg width="100%" alt={props.dish.name} src={props.dish.image}></CardImg>
+                              <CardImgOverlay>
+                                    <CardTitle>{props.dish.name}</CardTitle>
+                              </CardImgOverlay>
+
+                        </CardBody>
+                  </Card>
+            </div>
+```

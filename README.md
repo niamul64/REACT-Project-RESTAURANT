@@ -30,7 +30,15 @@ inside index.js file--> import 'bootstrap/dist/css/bootstrap.min.css';
 2. delete ./logo.svg and related imports and code of this.
 ```
 ### 5. manage folders: (setup foders for a clean and fresh )
-<img src="picS/components tree.JPG" alt="alt" width="60%">
+<img src="picS/components tree.JPG"  width="60%">
 
 ### 6. setup navigation bar. at header --> create a component 'Navigation.js' --> design using reactstrap: https://reactstrap.github.io
-<img src="picS/NAvigation bar.JPG" alt="alt" width="70%">
+<img src="picS/NAvigation bar.JPG"  width="70%">
+
+### 7. Now, to work with data, we make a folder in 'src' folder named 'data'--> inside it --> 'Dishes.js' file will keep the data for restaurant items.
+
+### 8. In data obj, we have image path. to keep images we make a directory in public folder--> named 'assets'--> inside this --> 'images' folder keeps the img.
+
+### 9. Now, inside the body component we can make the item list view. So, inside body componet folder, create 'Manu.js'(it will ba a class based component) and 'MenuItem.js'--> . because it will have state for data. 
+
+<img src="picS/dishes print on console.JPG"  width="70%">

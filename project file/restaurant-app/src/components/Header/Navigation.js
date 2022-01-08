@@ -31,29 +31,7 @@ const Navigation = () => {
                                                 GitHub
                                           </NavLink>
                                     </NavItem>
-                                    <UncontrolledDropdown
-                                          inNavbar
-                                          nav
-                                    >
-                                          <DropdownToggle
-                                                caret
-                                                nav
-                                          >
-                                                Options
-                                          </DropdownToggle>
-                                          <DropdownMenu right>
-                                                <DropdownItem>
-                                                      Option 1
-                                                </DropdownItem>
-                                                <DropdownItem>
-                                                      Option 2
-                                                </DropdownItem>
-                                                <DropdownItem divider />
-                                                <DropdownItem>
-                                                      Reset
-                                                </DropdownItem>
-                                          </DropdownMenu>
-                                    </UncontrolledDropdown>
+
                               </Nav>
                               <NavbarText>
                                     Simple Text
